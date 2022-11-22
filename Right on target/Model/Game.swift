@@ -24,13 +24,13 @@ protocol GameProtocol {
 
 class Game: GameProtocol {
     var score: Int = 0
-    
+    //Минимальное загаданное число
     private var minSecretValue: Int
-    
+    //Масимальное загаданное число
     private var maxSecretValue: Int
     
     var currentSecretValue: Int = 0
-    
+    //Количество раундов
     private var lastRound: Int
     
     private var currentRound: Int = 1
@@ -44,6 +44,7 @@ class Game: GameProtocol {
     }
     
     init?(startValue: Int, endValue: Int, rounds: Int) {
+        //Стартовое значение для выбора случаного числа не может быть больше конечного
         guard startValue <= endValue else {
             return nil
         }
@@ -63,11 +64,11 @@ class Game: GameProtocol {
         currentSecretValue = self.getNewSecretValue()
         currentRound += 1
     }
-    
+    //Загадать и вернуть новое случаное число
     private func getNewSecretValue() -> Int {
         (minSecretValue...maxSecretValue).randomElement()!
     }
-    
+    //Подсчитать количество очков
     func calculateScore(with value: Int) {
         if value > currentSecretValue {
             score += 50 - value + currentSecretValue
