@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		922F2F1E2926D81400DB676C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922F2F1D2926D81400DB676C /* SecondViewController.swift */; };
 		923DE202292D64B1008BC7B7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923DE201292D64B1008BC7B7 /* Game.swift */; };
+		925AA449293D19920066C829 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA448293D19920066C829 /* GameRound.swift */; };
+		925AA44B293D1B040066C829 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA44A293D1B040066C829 /* Generator.swift */; };
 		9289CB41292416E400224733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289CB40292416E400224733 /* AppDelegate.swift */; };
 		9289CB43292416E400224733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289CB42292416E400224733 /* SceneDelegate.swift */; };
 		9289CB45292416E400224733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289CB44292416E400224733 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		922F2F1D2926D81400DB676C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		923DE201292D64B1008BC7B7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		925AA448293D19920066C829 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		925AA44A293D1B040066C829 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		9289CB3D292416E400224733 /* Right on target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Right on target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9289CB40292416E400224733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9289CB42292416E400224733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				923DE201292D64B1008BC7B7 /* Game.swift */,
+				925AA448293D19920066C829 /* GameRound.swift */,
+				925AA44A293D1B040066C829 /* Generator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +162,8 @@
 				923DE202292D64B1008BC7B7 /* Game.swift in Sources */,
 				9289CB45292416E400224733 /* ViewController.swift in Sources */,
 				9289CB41292416E400224733 /* AppDelegate.swift in Sources */,
+				925AA44B293D1B040066C829 /* Generator.swift in Sources */,
+				925AA449293D19920066C829 /* GameRound.swift in Sources */,
 				9289CB43292416E400224733 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.dev74.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -346,7 +354,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.dev74.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
